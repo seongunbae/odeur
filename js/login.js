@@ -49,10 +49,6 @@
   setTimeout(() => counter($counter, max), 500);
   }
   
-  $(function(){
-  $('.tes').mouseup(function(){
-    alert("준비중 입니다.");
-  });
-  });
+
   
   

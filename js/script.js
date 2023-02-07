@@ -72,3 +72,9 @@ $('.tes').mouseup(function(){
 });
 });
 
+$(function(){
+  $(".keep").mouseup(function(){
+    alert("로그인 후 이용해 주세요.");
+  });
+});
+
