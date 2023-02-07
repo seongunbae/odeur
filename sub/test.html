@@ -21,8 +21,17 @@
     <script src="../js/login.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--js-->
+    
 </head>
+<script>
+    $(function(){
+ $('.keep').mouseup(function(){
+   alert("로그인 후 이용해 주세요.");
+ });
+ });
+</script>
 <body>
+    
     <div id="header_wrap"><!--header_wrap_start-->
         <div id="header"><!--header_start-->
             <ul class="gnb"><!--gnb_start-->
@@ -67,7 +76,7 @@
                 <li><a href="../sub/login.html">
                         <img class="b" src="../images/header-profile-icon_black.png" width="25px" height="25px" alt="">
                     </a></li>
-                <li><a href="javascript:return false;">
+                <li><a class="keep" href="../sub/login.html">
                         <img class="b" src="../images/header-cart-icon_black.png" width="25px" height="25px" alt="">
                     </a></li>
             </ul><!--login_util-->
