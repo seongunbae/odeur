@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,111 +12,303 @@
         @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Noto+Serif+KR&display=swap');
     </style>
     <!--css-->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-    <link rel="stylesheet" href="css/shop.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/shop.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--css-->
     <!--js-->
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--js-->
 </head>
+<script>
+    $(function(){
+        $(".button").mouseup(function(){
+            alert("로그인 후 이용해 주세요.");
+        });
+    });
+</script>
 <body>
-<!---------------------------------header--------------------------------->
+    <!---------------------------------header--------------------------------->
     <div id="header_wrap"><!--header_wrap_start-->
         <div id="header" class="header_wrap-scrolled"><!--header_start-->
             <ul class="gnb"><!--gnb_start-->
-                <li><a href="ABOUT/about.html">ABOUT</a></li>
-                <li><a href="#">SHOP</a></li>
+                <li><a href="../sub/about.html">ABOUT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
                 <li><a href="#">EVENT</a></li>
-                <li><a href="#">TEST</a></li>
+                <li><a href="../sub/test.html">TEST</a></li>
             </ul><!--gnb_end-->
-            <div class="submenu_wrap" style="height: 175px;
+            <div class="submenu_wrap" style="
                 display:none;"><!--submenu_all-->
-                <div class="submenu">
+                <div class="submenu" style="display:none;">
                     <ul>
                         <li class="s_a"><a href="#">PERFUME</a>
                             <div class="submenu_img">
-                                <img src="images/perfume.png" alt="">
+                                <img src="../images/perfume.png" alt="">
                             </div>
                         </li>
                         <li class="s_b"><a href="#">CANDLE</a>
                             <div class="submenu_img">
-                                <img src="images/candle.png" alt="">
+                                <img src="../images/candle.png" alt="">
                             </div>
                         </li>
                         <li class="s_c"><a href="#">SOAP</a>
                             <div class="submenu_img">
-                                <img src="images/soap.png" alt="">
+                                <img src="../images/soap.png" alt="">
                             </div>
                         </li>
                         <li class="s_d"><a href="#">HAND CREAM</a>
                             <div class="submenu_img">
-                                <img src="images/handcream.png" alt="">
+                                <img src="../images/handcream.png" alt="">
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
             <h1 class="logo"><!--logo-->
-                <a href="index.html">
-                    <img class="a" src="images/logo_w.png" width="200px" height="50px" alt="logo_w"
+                <a href="../index.html">
+                    <img class="a" src="../images/logo_w.png" width="200px" height="50px" alt="logo_w"
                         style="display:inline;">
-                    <img class="b" src="images/logo_b.png" width="200px" height="50px" alt="logo_b"
+                    <img class="b" src="../images/logo_b.png" width="200px" height="50px" alt="logo_b"
                         style="display:none;">
                 </a>
             </h1><!--logo-->
             <!--login_util-->
             <ul class="util">
-                <li><a href="javascript:return false;">
-                        <img class="a" src="images/header-profile-icon.png" width="25px" height="25px" alt="">
-                        <img class="b" src="images/header-profile-icon_black.png" width="25px" height="25px" alt="">
+                <li><a href="../sub/login.html">
+                        <img class="a" src="../images/header-profile-icon.png" width="25px" height="25px" alt="">
+                        <img class="b" src="../images/header-profile-icon_black.png" width="25px" height="25px" alt="">
                     </a></li>
-                <li><a href="javascript:return false;">
-                        <img class="a" src="images/header-cart-icon.png" width="25px" height="25px" alt="">
-                        <img class="b" src="images/header-cart-icon_black.png" width="25px" height="25px" alt="">
+                <li><a class="keep" href="../sub/login.html">
+                        <img class="a" src="../images/header-cart-icon.png" width="25px" height="25px" alt="">
+                        <img class="b" src="../images/header-cart-icon_black.png" width="25px" height="25px" alt="">
                     </a></li>
             </ul>
             <!--login_util-->
         </div><!--header_end-->
     </div><!--header_wrap_end-->
-<!---------------------------------header--------------------------------->
-    <div id="video_banner"><!--banner-->
-        <div class="banner_wrap">
-            <div class="banner_text">
-                <p class="font">
-                    ODEUR
-                </p><br><br>
-                <p>PREMIUM FRAGRANCE BRAND</p>
-            </div>
-        </div>
+    <!---------------------------------header--------------------------------->
+
     </div><!--banner-->
-<div id="container">
-    
-</div>
-<!------------------------------------footer------------------------------>
+    <div id="container">
+        <div class="banner"></div>
+        <div id="section1">
+            <img src="../images/rose.png" alt="" width="210px" height="300px" style="position: absolute; top: 25px; right: 440px; border-radius: 100px;">
+            <h3>향기 컬렉션</h3>
+            <p class="title_text">
+                아름다운 자연에서 오는 다양한 감정을 표현한 향기는 시간이 흐르면서
+                <br>일어나는 다채로운 향의 변화를 온전히 느낄 수 있는 제품입니다.
+                <br>다양한 제품을 통해 아름다운 자연을 경험해보세요.
+            </p>
+            <a class="button" href="../sub/login.html" style="transition: all 1s; display:inline-block; padding:4px 10px; border: 1px solid #777; margin-top: 80px;">구매하기</a>
+        </div>
+        <div id="perfume" class="section_box"></div>
+        <h2 class="item_title" style="border-top:1px solid #777; padding-top:50px ;">PERFUME</h2>
+        <div class="wrap">
+
+        
+        <div class="collection">
+            <ul>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/perfume1.png" alt="">
+                            <span class="p_p" style="padding:0 64px 0 6px;">Herbal Scent</span><span
+                                class="p_s">3,5000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/perfume2.png" alt="">
+                            <span class="p_p" style="padding:0 63px 0 6px;">Woody Scent</span><span
+                                class="p_s">3,5000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/perfume3.png" alt="">
+                            <span class="p_p" style="padding:0 70px 0 6px;">Green Scent</span><span
+                                class="p_s">3,5000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/perfume4.png" alt="">
+                            <span class="p_p" style="padding:0 71px 0 6px;">Musk Scent</span><span
+                                class="p_s">3,5000\</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div id="soap" class="section_box"></div>
+            <h2 class="item_title">SOAP</h2>
+            <ul>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/soap1.png" alt="">
+                            <span class="p_p" style="padding:0 75px 0 6px;">Eucalyptus</span><span
+                                class="p_s">1,1000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/soap2.png" alt="">
+                            <span class="p_p" style="padding:0 98px 0 6px;">Teatree</span><span
+                                class="p_s">1,1000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/soap3.png" alt="">
+                            <span class="p_p" style="padding:0 81px 0 6px;">Rosemary</span><span
+                                class="p_s">1,1000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/soap4.png" alt="">
+                            <span class="p_p" style="padding:0 86px 0 6px;">Lavender</span><span
+                                class="p_s">1,1000\</span>
+
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div id="candle" class="section_box"></div>
+            <h2 class="item_title">OLFACTIVE CANDLE</h2>
+            <ul id="candle">
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/candle1.png" alt="">
+                            <span class="p_p" style="padding:0 100px 0 6px;">Jasmin</span><span
+                                class="p_s">2,5000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/candle2.png" alt="">
+                            <span class="p_p" style="padding:0 72px 0 6px;">Peppermint</span><span
+                                class="p_s">2,2000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/candle3.png" alt="">
+                            <span class="p_p" style="padding:0 71px 0 6px;">Chamomile</span><span
+                                class="p_s">1,8000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/candle4.png" alt="">
+                            <span class="p_p" style="padding:0 100px 0 6px;">Ginger</span><span
+                                class="p_s">2,7000\</span>
+
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div id="handlotion" class="section_box"></div>
+            <h2 class="item_title">HAND LOTION</h2>
+            <ul class="m_b">
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/hand1.png" alt="">
+                            <span class="p_p" style="padding:0 85px 0 6px;">Oakmoss</span><span
+                                class="p_s">2,5000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/hand3.png" alt="">
+                            <span class="p_p" style="padding:0 78px 0 6px;">Galbanum</span><span
+                                class="p_s">2,5000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/hand2.png" alt="">
+                            <span class="p_p" style="padding:0 98px 0 6px;">Balsam</span><span
+                                class="p_s">3,5000\</span>
+
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a href="javascript:return false;">
+                            <img src="../images/hand4.png" alt="">
+                            <span class="p_p" style="padding:0 76px 0 6px;">Eucalyptus</span><span
+                                class="p_s">3,5000\</span>
+
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+    </div>
+    <!------------------------------------footer------------------------------>
     <div id="footer_wrap">
         <div id="footer">
             <ul class="icon">
                 <li>
-                    <a href="#">
-                        <img src="images/icon_facebook.png" alt="icon_facebook">
+                    <a href="https://ko-kr.facebook.com/">
+                        <img src="../images/icon_facebook.png" alt="icon_facebook">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="images/icon_instar.png" alt="icon_instar">
+                    <a href="https://www.instagram.com/">
+                        <img src="../images/icon_instar.png" alt="icon_instar">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="images/icon_twitter.png" alt="icon_twitter">
+                    <a href="https://twitter.com/">
+                        <img src="../images/icon_twitter.png" alt="icon_twitter">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="images/icon_youtube.png" alt="icon_youtube">
+                    <a href="https://www.youtube.com/">
+                        <img src="../images/icon_youtube.png" alt="icon_youtube">
                     </a>
                 </li>
             </ul>
@@ -125,10 +318,11 @@
                 <span class="footer_bold">대표자</span> : 배성운 l 이메일 : <a href="#">tjddns134@naver.com</a>
             </p>
             <h1 class="footer_logo">
-                <img src="images/logo_b.png" alt="footer_logo">
+                <img src="../images/logo_b.png" alt="footer_logo">
             </h1>
         </div>
     </div>
-<!------------------------------------footer------------------------------>
+    <!------------------------------------footer------------------------------>
 </body>
+
 </html>
