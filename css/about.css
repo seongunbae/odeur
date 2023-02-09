@@ -365,6 +365,9 @@ video{
     position: relative;
     text-align: center;
 }
+#section2 li a{
+    display: block;
+}
 #section2 img:hover{
     transform: scale(1.1);
     opacity: 1;
