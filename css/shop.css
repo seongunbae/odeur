@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+/*------------------------header_wrap_start-----------------------------*/
+#header_wrap {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    background-color: rgba(255, 255, 255, 1);
+    height: 100px;
+    transition: all 0.5s;
+}
+
+#header_wrap.header_wrap-scrolled {
+    background-color: #000;
+    transition: all 0.5s;
+}
+
+#header_wrap.header_wrap-scrolled .gnb>li>a {
+    color: #fff;
+}
+
+/*------------------------header_wrap_end-----------------------------*/
+
+
+/*--------------------------------header-----------------------------*/
+#header {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-----------------------------------header-----------------------------*/
+
+
+.logo {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    z-index: 91;
+    transform: translateX(-50%);
+}
+
+
+
+/*--------------------------------util_start--------------------------*/
+
+
+.util {
+    display: flex;
+    padding-top: 60px;
+}
+
+.util li {
+    margin-left: 20px;
+}
+
+.util li:first-child {
+    margin-left: 0;
+}
+
+/*--------------------------------util_end----------------------------*/
+
+
+/*--------------------------------gnb_start----------------------------*/
+.gnb {
+    display: flex;
+    padding-top: 60px;
+}
+
+.gnb>li {
+    margin-left: 30px;
+    transition: all 0.3s;
+}
+
+.gnb li a {
+    font-weight: 600;
+}
+
+.gnb>li:first-child {
+    margin-left: 0;
+}
+
+/*--------------------------------gnb_end----------------------------*/
+
+/*--------------------------------submenu_start----------------------*/
+
+
+/*----------------------------submenu_end----------------------------*/
+
+
+#container{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    height: 800px;
+    background: url(../images/s.png)no-repeat top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#section1{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid #777;
+
+}
+#section1 h3{
+    padding: 40px 0;
+}
+.item_title{
+    text-align: center;
+    padding-bottom: 70px;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-top: 50px;
+}
+.collection{
+width: 1320px;
+margin: 0 auto;
+height: auto;
+font-family: 'Nanum Myeongjo', serif;
+}
+
+.collection ul{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.collection li{
+    transition: all 1s;
+}
+.box{
+    width: 202px;
+    height: 288px;
+    border: 1px solid #ddd;
+}
+.p_p{
+    padding: 0 59px 0 6px;
+    font-size: 14px;
+}
+.p_s{
+    font-size: 12px;
+}
+.m_b{
+    padding-bottom: 150px;
+}
+.collection li:hover{
+    background-color: #000;
+    color: #fff;
+}
+.collection li:hover .p_p{
+    color: #fff;
+}
+.collection li:hover .p_s{
+    color: #fff;
+}
+.button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.imgwrap{
+    width: 1320px;
+    margin: 0 auto;
+    height: 300px;
+    position: relative;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------footer_start------------------------------*/
+#footer_wrap {
+    background-color: #000;
+    height: 250px;
+}
+
+#footer {
+    text-align: center;
+    width: 1320px;
+        margin: 0 auto;
+}
+
+.icon {
+    padding: 30px 0;
+    justify-content: center;
+    display: flex;
+
+}
+
+.icon li {
+    margin: 0 10px;
+}
+
+.icon li img {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.icon li a:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.footer_bold {
+    font-weight: bold;
+    color: #444;
+}
+
+.footer_logo {
+    padding-top: 30px;
+    opacity: 0.3;
+}
+.footer_logo img {
+    width: 200px;
+    height: 50px;
+}
+/*-------------------------------footer_end----------------------------*/
