@@ -1,7 +1,7 @@
 
   $(function(){//submenu
   $('#submenu_wrap').hide();
-  $('.gnb li a').mouseenter(function(){
+  $('.on').mouseenter(function(){
     $('.submenu_wrap').stop().fadeIn();
     $('.submenu_wrap').mouseleave(function(){
       $('.submenu_wrap').stop().fadeOut();
