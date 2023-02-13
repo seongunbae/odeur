@@ -412,7 +412,6 @@ video{
 .section3_bg{
     width: 100%;
     background: url(../images/nature.png) no-repeat center;
-    background-attachment: fixed;
     z-index: 70;
 }
 .section h1{
@@ -458,7 +457,7 @@ video{
 .s_p{
     position: absolute;
     top: 37%;
-    left: 56px;
+    left: 15%;
     text-align: center;
     font-weight: bold;
     color: #000;
