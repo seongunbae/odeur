@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1320px">
+    <title>ODEUR LOGIN</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Noto+Serif+KR&display=swap');
+    
+   </style>
+    <!--css-->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/login.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--css-->
+    <!--js-->
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--js-->
+    
+</head>
+<script>
+    $(function(){
+  $("button").mouseup(function(){
+    alert("아이디를 입력해 주세요.");
+  });
+});
+$(function(){
+  $(".keep").mouseup(function(){
+    alert("로그인 후 이용해 주세요.");
+  });
+});
+</script>
+<body>
+    <!--------------------------------------header----------------------------------->
+    <div id="header_wrap"><!--header_wrap_start-->
+        <div id="header"><!--header_start-->
+            <div class="menu_btn"><a href="#">       
+                <img class="a" src="../images/btn_b.png" alt="">
+                <img class="b" src="../images/btn_w.png" alt="">
+            </a>
+            </div>  
+            <ul class="gnb"><!--gnb_start-->
+                <li><a href="../sub/about.html">ABOUT</a></li>
+                <li><a href="../sub/shop.html">SHOP</a></li>
+                <li><a href="../sub/event.html">EVENT</a></li>
+                <li><a href="../sub/test.html">TEST</a></li>
+            </ul><!--gnb_end-->
+            <div class="submenu_wrap" style="height: 175px;
+                display:none;"><!--submenu_all-->
+                <div class="submenu">
+                    <ul>
+                        <li class="s_a"><a href="../sub/shop.html#perfume">PERFUME</a>
+                            <div class="submenu_img">
+                                <img src="../images/perfume.png" alt="">
+                            </div>
+                        </li>
+                        <li class="s_c"><a href="../sub/shop.html#soap">SOAP</a>
+                            <div class="submenu_img">
+                                <img src="../images/soap.png" alt="">
+                            </div>
+                        </li>
+                        <li class="s_b"><a href="../sub/shop.html#candle">OLFACTIVE CANDLE</a>
+                            <div class="submenu_img">
+                                <img src="../images/candle.png" alt="">
+                            </div>
+                        </li>
+                        <li class="s_d"><a href="../sub/shop.html#handlotion">HAND CREAM</a>
+                            <div class="submenu_img">
+                                <img src="../images/handcream.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h1 class="logo"><!--logo-->
+                <a href="../index.html">
+                    <img class="b" src="../images/logo_b.png" width="200px" height="50px" alt="logo_b">
+                </a>
+            </h1><!--logo-->
+            <ul class="util"><!--login_util-->
+                <li><a href="login.html">
+                        <img class="b" src="../images/header-profile-icon_black.png" width="25px" height="25px" alt="">
+                    </a></li>
+                <li><a class="keep" href="#">
+                        <img class="b" src="../images/header-cart-icon_black.png" width="25px" height="25px" alt="">
+                    </a></li>
+            </ul><!--login_util-->
+        </div><!--header_end-->
+    </div><!--header_wrap_end-->
+    <div class="menu_bg"></div>
+<div class="sidebar_menu">
+     <div class="close_btn"><a href="#">       
+         <img src="../images/x_btn_w.png" alt="">
+         </a>
+     </div>
+     <ul class="menu_wrap">
+        <li><a href="../sub/about.html">ABOUT</a></li>
+        <br>
+        <li><a href="../sub/shop.html">SHOP</a></li>
+        <br>        
+        <li><a href="../sub/event.html">EVENT</a></li>
+         <br>   
+         <li><a href="../sub/test.html">TEST</a></li>
+         <br><br><br>
+         <br><br><br><br>
+         <li><a href="../sub/login.html">LOGIN</a></li>
+     </ul>
+</div>
+    <!--------------------------------------header----------------------------------->
+    <div id="container">
+        <div class="log_wrap">
+            <div class="log">
+                <p>아이디</p>
+                <form action="">
+                    <label for="">
+                        <input type="text" style=" width: 300px; height: 40px; font-size: 12px; padding: 0 15px;"
+                            placeholder="아이디를 입력해주세요">
+                    </label>
+                </form>
+            </div>
+            <div class="log">
+                <p>비밀번호</p>
+                <form action="">
+                    <label for="">
+                        <input type="password" style=" width: 300px; height: 40px; font-size: 12px; padding: 0 15px; "
+                            placeholder="비밀번호를 입력해주세요">
+                    </label>
+                </form>
+            </div>
+            <div class="save">
+                <input type="checkbox" id="toggle" hidden> 
+                <label for="toggle" class="idsave">
+                    로그인 상태 유지
+                </label>
+                <label for="toggle" class="toggleSwitch">
+                
+                  <span class="toggleButton"></span>
+                </label>
+            </div>
+            
+            <button type="submit"
+                style="background-color: black; color: white; width: 334px; padding: 10px 0; margin-top:20px; cursor: pointer; ">로그인</button>
+            <ul>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">아이디 찾기</a></li>
+                <li><a href="#">비밀번호 찾기</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--------------------------------------footer----------------------------------->
+    <div id="footer_wrap">
+        <div id="footer">
+            <ul class="icon">
+                <li>
+                    <a href="#">
+                        <img src="../images/icon_facebook.png" alt="icon_facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/icon_instar.png" alt="icon_instar">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/icon_twitter.png" alt="icon_twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/icon_youtube.png" alt="icon_youtube">
+                    </a>
+                </li>
+            </ul>
+            <p>
+                <span class="footer_bold">상호</span> : 오도어 l <span class="footer_bold">주소</span> : 부산광역시 중구 중앙동6가 중앙대로
+                26<br>
+                <span class="footer_bold">대표자</span> : 배성운 l 이메일 : <a href="#">tjddns134@naver.com</a>
+            </p>
+            <h1 class="footer_logo">
+                <img src="../images/logo_b.png" alt="footer_logo">
+            </h1>
+        </div>
+    </div>
+    <!--------------------------------------footer----------------------------------->
+</body>
+
+</html>
