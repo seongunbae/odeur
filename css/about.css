@@ -510,7 +510,6 @@ video{
 .section4_bg{
     width: 100%;
     background: url(../images/dd.png) no-repeat top;
-    background-attachment: fixed;
 }
 /*------------------------------------------section5-----------------------------------------*/
 
