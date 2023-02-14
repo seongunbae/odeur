@@ -20,7 +20,7 @@ body {
     font-size: 16px;
     line-height: 1.5em;
     height: auto;
-    min-width: 1320px;
+    min-width: 600px;
 }
 
 /*------------------------header_wrap_start-----------------------------*/
@@ -266,6 +266,8 @@ body {
     .util li a {
         display: none;
     }
+    #container{
+    background-position:top -625px left -838px;
 
 }
 
@@ -363,7 +365,7 @@ body {
 
 #footer {
     text-align: center;
-    width: 1320px;
+    min-width: 600px;
         margin: 0 auto;
 }
 
