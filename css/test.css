@@ -354,5 +354,52 @@ body {
     color: #000;
     transition: all 0.5s;
 }
+/*-----------------------------footer_start------------------------------*/
+#footer_wrap {
+    background-color: #000;
+    height: 230px;
+}
+
+#footer {
+    text-align: center;
+    width: 1320px;
+        margin: 0 auto;
+}
+
+.icon {
+    padding: 30px 0;
+    justify-content: center;
+    display: flex;
+
+}
+
+.icon li {
+    margin: 0 10px;
+}
+
+.icon li img {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.icon li a:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.footer_bold {
+    font-weight: bold;
+    color: #444;
+}
+
+.footer_logo {
+    padding-top: 30px;
+    opacity: 0.3;
+}
+.footer_logo img {
+    width: 200px;
+    height: 50px;
+}
+/*-------------------------------footer_end----------------------------*/
 
 
