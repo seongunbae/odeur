@@ -20,7 +20,7 @@ body {
     font-size: 16px;
     line-height: 1.5em;
     height: auto;
-    min-width: 1320px;
+    min-width: 600px;
 }
 
 /*------------------------header_wrap_start-----------------------------*/
@@ -267,7 +267,7 @@ body {
 /*------------------------------------------------------------------------------------*/
 
 #container{
-    width: 1320px;
+    min-width: 600px;
     margin: 0 auto;
     padding: 115px 0 120px;
     text-align: center;
@@ -349,6 +349,7 @@ body {
     background-color: #000;
     height: 230px;
     padding-bottom:20px;
+    min-width:600px;
 }
 
 #footer {
