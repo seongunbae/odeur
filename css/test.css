@@ -267,8 +267,8 @@ body {
         display: none;
     }
     #container{
-    background-position:top -625px left -838px;
-
+    background: url(../images/perfume_mockup.png) no-repeat top -625px left -838px;
+    }
 }
 
 
