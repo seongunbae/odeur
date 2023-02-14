@@ -354,7 +354,7 @@ body {
 
 #footer {
     text-align: center;
-    width: 1320px;
+    min-width: 600px;
         margin: 0 auto;
 }
 
