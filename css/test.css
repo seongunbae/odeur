@@ -265,15 +265,7 @@ body {
 
     .util li a {
         display: none;
-    }
-    #container{
-    width: 100%;
-    padding-bottom: 44px;
-    height: auto;
-    margin: 0 auto;
-    text-align: center;
-    background: url(../images/perfume_mockup.png) no-repeat top -625px left -838px;
-    }
+    }   
 }
 
 
@@ -286,6 +278,11 @@ body {
     margin: 0 auto;
     text-align: center;
     background: url(../images/perfume_mockup.png) no-repeat top -700px left -200px;
+}
+@media (max-width:700px) {
+    #container{
+    background: url(../images/perfume_mockup.png) no-repeat top -625px left -838px;
+    }
 }
 .mj{
     font-family: 'Nanum Myeongjo', serif;
