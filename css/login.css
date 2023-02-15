@@ -345,7 +345,7 @@ body {
     font-weight: 600;
 }
 /*-----------------------------footer_start------------------------------*/
-@media (max-width:1320px min-width:600px) {
+@media (max-width:1320px) and (min-width:600px) {
     #footer_wrap{
     height:250px;
         padding-bottom:50px;
