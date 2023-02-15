@@ -89,7 +89,7 @@ body {
 
 .gnb>li {
     margin-left: 30px;
-    transition: all 0.3s;
+    transition: all 0.3s; 
 }
 
 .gnb li a {
