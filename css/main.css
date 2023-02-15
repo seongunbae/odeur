@@ -743,6 +743,7 @@ video{
         width: 150px;
         height: 150px;
         padding-left:10px;
+        margin-left:26px;
     }
     .title{
         font-size: 30px;
